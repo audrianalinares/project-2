@@ -1,4 +1,4 @@
-
+       
         //JS
         const searchForm = document.getElementById('search-form')
         const searchInput = document.getElementById('search-input')
@@ -9,7 +9,7 @@
             const q = searchInput.value
             search(q)
         })
-
+     
         function search(q) {
             const apikey = "KKX1w2c3Dwu2Xt0oA77LyWd1JhDp4iei"
             const path = `https://api.giphy.com/v1/gifs/search?api_key=${apikey}&q=${q}`
@@ -43,3 +43,5 @@
                 console.log(err.message)
             })
         }
+        $(document).ready(function(){
+            });
